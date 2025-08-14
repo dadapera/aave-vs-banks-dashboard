@@ -17,12 +17,7 @@ export default function Dashboard() {
       setLoading(true);
       setError(null);
       
-      const response = await fetch(`/api/dashboard?t=${Date.now()}`, {
-        cache: 'no-store',
-        headers: {
-          'Cache-Control': 'no-cache',
-        },
-      });
+      const response = await fetch('/api/dashboard');
       const result: ApiResponse = await response.json();
       
       if (!result.success) {
