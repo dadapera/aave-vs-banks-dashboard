@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Force dynamic rendering - don't cache this route
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 // Import the handler functions directly to avoid internal API calls
 async function getAaveData() {
   try {
