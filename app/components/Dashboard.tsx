@@ -186,8 +186,21 @@ export default function Dashboard() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 text-center text-white/60 text-sm">
-          <p>Aave data from DeFiLlama API.</p>
+        <div className="mt-8 text-center text-white/60 text-sm space-y-2">
+          <p>Data refreshes automatically. Aave data from DeFiLlama API.</p>
+          <p>
+            Made with{' '}
+            <span className="text-red-400 animate-pulse">❤️</span>{' '}
+            by{' '}
+            <a 
+              href="https://x.com/dada_pera" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white underline hover:no-underline transition-colors duration-200"
+            >
+              dadapera.eth
+            </a>
+          </p>
         </div>
       </div>
     </div>
